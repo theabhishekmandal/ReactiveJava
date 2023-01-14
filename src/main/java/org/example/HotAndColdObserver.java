@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class HotAndColdObserver {
     public static void main(String[] args) {
-//        coldObservable();
+        coldObservable();
         hotObservable();
 
     }
@@ -36,7 +36,7 @@ public class HotAndColdObserver {
     private static void coldObservable() {
         /*
             Cold observable produces data for each observer. It only produces the data
-            when a observer is subscribed to the observable.
+            when an observer is subscribed to the observable.
          */
         Observable<Long> integerObservable = Observable.interval(1, TimeUnit.SECONDS);
 
